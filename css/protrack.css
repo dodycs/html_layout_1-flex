@@ -1,0 +1,71 @@
+/* project tracker */
+
+.container {
+   min-width: 505px;
+   /* background-color: black; */
+}
+
+.side-menu {
+   flex-basis: 151px;
+   max-width: 200px;
+   flex-grow: 1;
+   flex-shrink: 0;
+}
+
+.content {
+   flex-basis: 404px;
+   flex-grow: 1;
+   flex-shrink: 0;
+}
+
+ul.side-menu * {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   background-color: black;
+}
+ul.side-menu>li{
+   padding-bottom: 20px;
+}
+ul.side-menu>li>ul>li {
+   padding: 5px 10px;
+   color: white;
+   cursor:context-menu;
+   background-color: black;
+}
+
+ul.side-menu>li .header {
+   background-color: gray;
+   border-top: 2px solid palegreen;
+   padding:5px 10px;
+}
+
+ul.side-menu>li>ul>li:hover{
+   background-color: lightseagreen;
+}
+
+.column{
+   flex-grow: 1;
+   flex-basis: 100px;
+   flex-shrink: 0;
+}
+.column h2{
+   background-color: gray;
+   border-top: 2px solid palegreen;
+   padding: 5px 10px;
+}
+.column h3{
+   padding: 3px;
+   font-weight: 15px;
+   color: white;
+   background-color: #aaa;
+   font-weight: normal;
+   flex-basis: 100px;
+   flex-shrink: 0;
+   flex-grow: 1;
+}
+.column .icon, .column .description {
+   flex-basis: 50px;
+   flex-shrink: 0;
+   flex-grow: 1;
+}

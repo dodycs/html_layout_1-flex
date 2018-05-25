@@ -1,0 +1,64 @@
+.parent {
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+}
+
+.parent .child {
+   background-color: lightblue;
+   flex-basis: 200px;
+   height: 100px;
+}
+
+.parent .child:nth-of-type(odd) {
+   background-color: lightcoral;
+}
+
+/* googol */
+.container {
+   min-width: 500px;
+}
+.side-menu {
+   flex-basis: 150px;
+   max-width: 200px;
+   flex-grow: 1;
+   flex-shrink: 0;
+}
+
+.content {
+   flex-basis: 350px;
+   flex-grow: 1;
+   flex-shrink: 1;
+}
+.content .nav-left,
+.content .nav-right {
+   flex-shrink: 1;
+}
+.content .nav-left{
+   flex-grow: 1;
+   max-width: 350px;
+}
+.content .nav-left input{
+   width: 100% ;
+   font-size: 20px;}
+
+/* email list */
+.email-list {
+   background: #eee;
+}
+.email-list:nth-of-type(even) {
+   background-color: #ddd;
+}
+.email-list:hover {
+   background-color: #ccc;
+}
+.sender, {
+   flex-basis: 300px;
+}
+.body{
+   flex-basis: 500px;
+   flex-grow: 1;
+}
+.date{
+   flex-basis: 100px;
+}
